@@ -5,6 +5,7 @@ import { MONTH_NUMBER, MONTHS, RANGE_CHECK } from '../../constans';
 import { DatesType, GraphDateResponse, GraphType, TooltipContentType } from '../../types';
 import GraphDay from '../../components/GraphDay/GraphDay';
 import ru from 'dayjs/locale/ru';
+import BoxesGraph from '../../components/BoxesGraph/BoxesGraph';
 
 interface Props {
   dates: DatesType;
@@ -123,6 +124,7 @@ const ContributionGraph: React.FC<Props> = ({ dates, loading }) => {
             )}
           </tbody>
         </table>
+        <BoxesGraph />
       </div>
     </div>
   );

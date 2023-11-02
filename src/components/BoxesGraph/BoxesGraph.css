@@ -1,0 +1,50 @@
+.boxes {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: auto;
+}
+
+.boxes p {
+    font-size: 8px;
+    color: #959494;
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.box:first-child {
+    margin-left: 0;
+}
+
+.box1 {
+    background: #EDEDED;
+}
+
+.box2 {
+    background: rgba(172, 213, 242, 1);
+}
+
+.box3 {
+    background: rgba(127, 168, 201, 1);
+}
+
+.box4 {
+    background: rgba(82, 123, 160, 1);
+}
+
+.box5 {
+    background: rgba(37, 78, 119, 1);
+}
+
+.tooltip-title {
+    margin: 0 0 5px 0 !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
