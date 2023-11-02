@@ -1,0 +1,79 @@
+.section_calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+table {
+    width: max-content;
+    border-collapse: separate;
+    position: relative;
+}
+
+thead tr {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: -23px;
+    position: absolute;
+    font-size: 12px;
+    color: #959494;
+}
+
+.row {
+    position: absolute;
+    left: -26px;
+    font-size: 12px;
+    color: #959494;
+}
+
+tbody tr:nth-child(even) .row {
+    opacity: 0;
+}
+
+tbody tr:last-child .row {
+    opacity: 0;
+}
+
+.col {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #EDEDED;
+}
+
+.col span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    color: transparent;
+}
+
+.col:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+.text-left {
+    margin: 0 5px 0 0;
+}
+
+.text-right {
+    margin: 0 0 0 5px;
+}
+
+.class1 {
+    background: rgba(172, 213, 242, 1);
+}
+.class2 {
+    background: rgba(127, 168, 201, 1);
+}
+.class3 {
+    background: rgba(82, 123, 160, 1);
+}
+.class4 {
+    background: rgba(37, 78, 119, 1);
+}

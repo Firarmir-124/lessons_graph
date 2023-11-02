@@ -1,7 +1,8 @@
 import React from 'react';
+import ContributionGraph from '../ContributionGraph/ContributionGraph';
 
 const App = () => {
-  return <p>Hello world</p>;
+  return <ContributionGraph />;
 };
 
 export default App;
