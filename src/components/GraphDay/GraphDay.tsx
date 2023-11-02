@@ -1,10 +1,11 @@
 import React from 'react';
 import dayjs from 'dayjs';
-import { GraphType } from '../../types';
+import { TooltipContentType } from '../../types';
 import ru from 'dayjs/locale/ru';
+import { SET_CLASS } from '../../constans';
 
 interface Props {
-  graph: GraphType[];
+  graph: (TooltipContentType | string)[];
   index: number;
 }
 
@@ -18,10 +19,8 @@ const GraphDay: React.FC<Props> = ({ graph, index }) => {
           .format('dd')}
       </td>
 
-      {graph.map((itemI, index) => (
-        <td key={index} className="col">
-          0
-        </td>
+      {graph.map((item, index) => (
+        <td key={index} className={`col ${SET_CLASS(typeof item === 'object' ? item.contributions : 0)}`}></td>
       ))}
     </>
   );
